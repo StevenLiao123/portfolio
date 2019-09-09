@@ -11,7 +11,7 @@ export default () => <div className="section">
     
     <div className="content text-center">
         <h1>Steven Liao</h1>
-        <p className="title">Front-End Developer</p>
+        <h2>Front-End Developer</h2>
         <p>HTML/CSS | JavaScript | BootStrap | ReactJS | NodeJS | MySQL ...</p>
         <a href="#projects" className="btn btn-primary">My projects -></a>
     </div>

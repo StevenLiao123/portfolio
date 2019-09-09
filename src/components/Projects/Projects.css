@@ -1,0 +1,47 @@
+.project-content h1 {
+    text-align: center;
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: black;
+}
+
+.project-content p {
+    font-weight: bold;
+}
+
+.project-chartjs {
+    border-radius: 8px;
+    margin-bottom: 30px;
+    transition: transform 0.5s;
+    padding: 5px; 
+}
+
+.project-chartjs:hover, .currency-converter:hover, .homepage:hover, .burger:hover {
+    transform: translateY(-10px);
+    background-color: grey;
+}
+
+.currency-converter {
+    border-radius: 8px;
+    margin-bottom: 30px;
+    transition: transform 0.5s;
+    padding: 5px; 
+}
+
+
+.homepage {
+    border-radius: 8px;
+    margin-bottom: 30px;
+    transition: transform 0.5s;
+    padding: 5px; 
+}
+
+
+.burger {
+    border-radius: 8px;
+    margin-bottom: 30px;
+    transition: transform 0.5s;
+    padding: 5px; 
+}
+
