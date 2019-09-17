@@ -33,7 +33,7 @@ export default () => <div className="projects px-5 py-5" id="projects">
             <div className="card-body">
                 <h4><strong>React-based Application</strong></h4>
                 <br />
-                <h4>Still developing...</h4>
+                <h5>Still developing...</h5>
             </div>
         </div>
         <div className="burger col-md-4 shadow">
