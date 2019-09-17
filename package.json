@@ -2,9 +2,11 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://stevenliao123.github.io/portfolio",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "eslint": "^6.4.0",
+    "gh-pages": "^2.1.1",
     "jquery": "^3.4.1",
     "popper.js": "^1.14.7",
     "react": "^16.9.0",
@@ -16,6 +18,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
