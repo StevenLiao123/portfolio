@@ -2,15 +2,15 @@ import React from 'react';
 import './App.css';
 
 import Header from './Header';
-import LandingPage from './LandingPage';
-import Project from './Projects';
+import Body from './Body';
+import Footer from './Footer';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <LandingPage />
-      <Project />
+      <Body />
+      <Footer />
     </div>
   );
 }
