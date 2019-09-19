@@ -12,7 +12,7 @@ export default () => <div className="projects px-5 py-5" id="projects">
             <img src="assets/images/projects/chartjs-1.png" className="card-img-top" alt="chartjs-1" />
             <div className="card-body">
                 <h4><strong>Data-charts Web</strong></h4>
-                <p>Tools/libraries used in this project: create-react-app, bootStrap, chartJS</p>
+                <p>The React-based application shows polar area chart, line chart, dynamic cards and table.</p>
                 <a className="btn btn-info mr-3" href="https://github.com/StevenLiao123/dotter-coding-test" target="_blank" rel="noopener noreferrer">Github</a>
                 <a className="btn btn-info mr-3" href="https://stevenliao123.github.io/dotter-coding-test" target="_blank" rel="noopener noreferrer">Demo</a>
             </div>
@@ -20,8 +20,8 @@ export default () => <div className="projects px-5 py-5" id="projects">
         <div className="currency-converter col-md-4 shadow">
             <img src="assets/images/projects/currency-converter.png" className="card-img-top" alt="currency-converter" />
             <div className="card-body">
-                <h4><strong>React-based Application</strong></h4>
-                <p>Tools/libraries used in this project: bootStrap, react-router-dom, axios</p>
+                <h4><strong>Currency-Converter</strong></h4>
+                <p>The currency-converter that is designed to convert one currency into another in order to check its corresponding value. </p>
                 <a className="btn btn-info mr-3" href="https://github.com/StevenLiao123/Currency-Converter" target="_blank" rel="noopener noreferrer">Github</a>
             </div>
         </div>
@@ -39,8 +39,8 @@ export default () => <div className="projects px-5 py-5" id="projects">
         <div className="burger col-md-4 shadow">
             <img src="assets/images/projects/burger-1.png" className="card-img-top" alt="burger-1" />
             <div className="card-body">
-                <h4><strong>React-based Burger APP</strong></h4>
-                <p>Online Course from Udemy, Tools/libraries: create-react-app, redux, react-router-dom, etc </p>
+                <h4><strong>Burger Builder</strong></h4>
+                <p>Online course from Udemy, this application is a simulated food ordering app which allows user to pick ingredients to make up a burger.</p>
                 <a className="btn btn-info mr-3" href="https://github.com/StevenLiao123/Burger" target="_blank" rel="noopener noreferrer">Github</a>
                 <a className="btn btn-info ml-3" href="https://react-my-burger-51856.firebaseapp.com/" target="_blank" rel="noopener noreferrer">Demo</a>
             </div>
