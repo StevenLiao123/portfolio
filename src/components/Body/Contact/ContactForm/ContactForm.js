@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import axios from 'axios';
+
 
 class ContactForm extends Component {
     constructor(props) {
@@ -22,28 +22,21 @@ class ContactForm extends Component {
     handleSubmit = event => {
         event.preventDefault()
 
-        const { name, email, textarea } = this.state
-
-        const form = axios.post('/api/form', {
-            name,
-            email,
-            textarea
-        })
     }
 
     render() {
         return (
             <form className="contact-form" onSubmit={this.handleSubmit}>
                 <div className="form-group text-left">
-                    <label for="name">Name:</label>
+                    <label htmlFor="name">Name:</label>
                     <input className="form-control"  type="text"  name="name" onChange={this.handleChange} />
                 </div>
                 <div className="form-group text-left">
-                    <label for="email">Email:</label>
+                    <label htmlFor="email">Email:</label>
                     <input className="form-control"  type="email" name="email" placeholder="username@gmail.com" onChange={this.handleChange} />
                 </div>
                 <div className="form-group text-left">
-                    <label for="message">Message:</label>
+                    <label htmlFor="message">Message:</label>
                     <textarea className="form-control" name="textarea"  onChange={this.handleChange}></textarea>
                 </div>
                 <button>Submit</button>
@@ -52,4 +45,4 @@ class ContactForm extends Component {
             }
         }
         
-        export default ContactForm;
+export default ContactForm;
