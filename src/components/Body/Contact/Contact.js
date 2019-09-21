@@ -2,7 +2,7 @@ import React from 'react';
 
 import ContactForm from './ContactForm';
 
-export default () => <div className="row px-5 py-5 bg-info text-white">
+export default () => <div className="row px-5 py-5 bg-info text-white" id="contactme">
     <div className="col-lg-4">
         GoogleMap
     </div>
