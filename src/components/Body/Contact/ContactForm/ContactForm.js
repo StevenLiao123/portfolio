@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import * as emailjs from 'emailjs-com';
 
+import './ContactForm.css';
+
 class ContactForm extends Component {
     constructor(props) {
         super(props)

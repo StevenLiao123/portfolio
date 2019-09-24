@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
 import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
 
+import './GoogleMap.css';
+
 class GoogleMap extends Component {
     render() {
         const style = {
-            width: '300px',
-            height: '300px'
+            width: '80%',
+            height: '80%',
+            position: 'relative'
         }
 
         return (
-            <div className="google-map text-left">
+            <div className="googlemap">
                 <h2>Currenct Location:</h2>
                 <Map 
                     google={this.props.google} 
