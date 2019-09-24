@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css';
 
-export default () => <nav className="navbar navbar-expand-md navbar-dark dotterNav fixed-top px-5 py-3">
+export default () => <nav className="navbar navbar-expand-md px-5 py-3 navbar-dark fixed-top">
     <a className="navbar-brand" href="/"><img src="/portfolio/assets/images/nav/superman.jpg" className="img-fluid" alt="logo" /></a>
     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
