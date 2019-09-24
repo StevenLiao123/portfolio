@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import * as emailjs from 'emailjs-com';
 
 class ContactForm extends Component {
     constructor(props) {
@@ -7,42 +7,97 @@ class ContactForm extends Component {
         this.state = {
             name: '',
             email: '',
-            textarea: ''
+            subject: '',
+            message: ''
         }
-        this.handleChange = this.handleChange.bind(this)
-        this.handleSubmit = this.handleSubmit.bind(this)
     }
 
-    handleChange = event => {
+    handleSubmit(e) {
+        e.preventDefault()
+        const { name, email, subject, message } = this.state
+        let templateParams = {
+            name: name,
+            from_name: email,
+            to_name: 'stevenliao19900326_gmail_com',
+            subject: subject,
+            message_html: message,
+        }
+        emailjs.send(
+            'stevenliao19900326_gmail_com',
+            'template_RE5ZKJKm',
+            templateParams,
+            'user_7gReS0ajm7cIrdqEMnFtR'
+        ).then(function(response) {
+            console.log('SUCCESS!', response.status, response.text);
+            alert("Your email has been sent!");
+         }, function(error) {
+            console.log('FAILED...', error);
+            alert("Network error!");
+         });
+
+        this.resetForm()
+    }
+
+    resetForm() {
         this.setState({
-            name: event.target.value
-        });
+            name: '',
+            email: '',
+            subject: '',
+            message: '',
+        })
     }
 
-    handleSubmit = event => {
-        event.preventDefault()
-
+    handleChange = (param, e) => {
+        this.setState({ [param]: e.target.value })
     }
 
     render() {
         return (
-            <form className="contact-form" onSubmit={this.handleSubmit}>
-                <div className="form-group text-left">
-                    <label htmlFor="name">Name:</label>
-                    <input className="form-control"  type="text"  name="name" onChange={this.handleChange} />
+            <form className="contact-form text-left" onSubmit={this.handleSubmit.bind(this)}>
+                <div className="form-group">
+                    <label htmlFor="name">Name</label>
+                    <input
+                        className="form-control"
+                        type="text"
+                        name="name"
+                        value={this.state.name}
+                        onChange={this.handleChange.bind(this, 'name')}
+                        placeholder="Name" />
                 </div>
-                <div className="form-group text-left">
-                    <label htmlFor="email">Email:</label>
-                    <input className="form-control"  type="email" name="email" placeholder="username@gmail.com" onChange={this.handleChange} />
+                <div className="form-group">
+                    <label htmlFor="email">Email</label>
+                    <input
+                        className="form-control"
+                        type="email"
+                        name="name"
+                        value={this.state.email}
+                        onChange={this.handleChange.bind(this, 'email')}
+                        placeholder="eg. xx@gmail.com"
+                        required />
                 </div>
-                <div className="form-group text-left">
+                <div className="form-group">
+                    <label htmlFor="name">Subject</label>
+                    <input
+                        className="form-control"
+                        type="text"
+                        name="subject"
+                        value={this.state.subject}
+                        onChange={this.handleChange.bind(this, 'subject')}
+                        required />
+                </div>
+                <div className="form-group">
                     <label htmlFor="message">Message:</label>
-                    <textarea className="form-control" name="textarea"  onChange={this.handleChange}></textarea>
+                    <textarea 
+                        className="form-control" 
+                        type="textarea"
+                        name="message"
+                        value={this.state.message}
+                        onChange={this.handleChange.bind(this, 'message')} />
                 </div>
-                <button>Submit</button>
+                <button type="submit">Submit</button>
             </form>
-                )
-            }
-        }
-        
+        )
+    }
+}
+
 export default ContactForm;

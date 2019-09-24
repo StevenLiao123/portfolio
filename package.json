@@ -5,6 +5,7 @@
   "homepage": "https://stevenliao123.github.io/portfolio",
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "emailjs-com": "^2.4.0",
     "eslint": "^6.4.0",
     "gh-pages": "^2.1.1",
     "jquery": "^3.4.1",
@@ -36,5 +37,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {}
 }
