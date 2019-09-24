@@ -10,7 +10,7 @@ class GoogleMap extends Component {
 
         return (
             <div className="google-map text-left">
-                <h2>My Location:</h2>
+                <h2>Currenct Location:</h2>
                 <Map 
                     google={this.props.google} 
                     zoom={14} 
@@ -18,7 +18,8 @@ class GoogleMap extends Component {
                     initialCenter={{
                         lat: -33.868820,
                         lng: 151.209290
-                    }}>
+                    }}
+                    onClick={this.onMapClicked}>
                     <Marker onClick={this.onMarkerClick}
                         name={'Current location'} />
                     <InfoWindow onClose={this.onInfoWindowClose}>
