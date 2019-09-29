@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+}
+*::before{
+    box-sizing: border-box;
+}
+
+*::after{box-sizing: border-box;
+}
+
+.Resume {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    white-space: pre-wrap;
+    outline: 0;
+    height:500px;
+    width:100%;
+    left:0;
+}
+
+body{
+    width:100%
+}

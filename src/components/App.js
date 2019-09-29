@@ -1,18 +1,24 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { Route, Switch } from 'react-router-dom';
 import './App.css';
+import LandingPage from './LandingPage';
+import Resume from './Resume';
 
-import Header from './Header';
-import Body from './Body';
-import Footer from './Footer';
+class App extends Component {
+  render(){
+    let routes = (
+      <Switch>
+        <Route path="/" exact component={LandingPage} />
+        <Route path="/resume" component={Resume} />
+      </Switch>
+    )
 
-function App() {
-  return (
-    <div className="App">
-      <Header />
-      <Body />
-      <Footer />
-    </div>
-  );
+    return (
+      <div className="App">
+          {routes}
+      </div>
+    );
+  }
 }
 
 export default App;

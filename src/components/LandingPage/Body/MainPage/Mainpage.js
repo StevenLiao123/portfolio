@@ -1,5 +1,5 @@
 import React from 'react';
-import './LandingPage.css';
+import './MainPage.css';
 import Typist from 'react-typist';
 
 export default () => <div className="section">

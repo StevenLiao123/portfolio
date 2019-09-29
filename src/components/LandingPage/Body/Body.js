@@ -1,12 +1,12 @@
 import React from 'react';
 
-import LandingPage from './LandingPage';
+import MainPage from './MainPage';
 import Projects from './Projects';
 import AboutMe from './AboutMe';
 import Contact from './Contact';
 
 export default () => <div>
-    <LandingPage />
+    <MainPage />
     <Projects />
     <AboutMe />
     <Contact />

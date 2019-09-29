@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Header.css';
 
 export default () => <nav className="navbar navbar-expand-md px-5 py-3 navbar-dark fixed-top">
@@ -8,6 +9,9 @@ export default () => <nav className="navbar navbar-expand-md px-5 py-3 navbar-da
     </button>
     <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav ml-auto pb-3">
+            <li className="nav-item pb-3">
+                <Link className="nav-link text-white" to="/resume">RESUME</Link>
+            </li>
             <li className="nav-item pb-3">
                 <a className="nav-link text-white" href="#projects">PROJECTS</a>
             </li>
