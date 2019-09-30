@@ -105,7 +105,7 @@ class ContactForm extends Component {
                     <button className="mb-4" type="submit">Submit</button>
                 </form>
                 <button className="scroll-top text-center mb-4" onClick={this.scrollToTop}>
-                    <img src="/portfolio/assets/images/scrollTop.jpg" className="img-fluid" alt="scrollTop" />
+                    <img src="/portfolio/assets/images/scrollTop.jpg" className="scroll-top-image" alt="scrollTop" />
                 </button>
             </div>
         )
