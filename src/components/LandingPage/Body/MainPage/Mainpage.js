@@ -16,6 +16,5 @@ export default () => <div className="section">
             <h2>Front-End Developer</h2>
             <p>HTML/CSS | JavaScript | BootStrap | ReactJS | NodeJS | MySQL ...</p>
         </Typist>
-        <a href="#projects" className="btn btn-primary">My projects -></a>
     </div>
 </div>;

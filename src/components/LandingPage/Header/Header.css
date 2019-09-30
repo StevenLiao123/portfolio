@@ -1,3 +1,8 @@
 a.nav-link:hover {
     text-decoration: underline;
 }
+
+.nav-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

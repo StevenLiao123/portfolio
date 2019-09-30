@@ -164,6 +164,7 @@ class Resume extends Component {
             resumeMarkdownDom: ''
         }
     }
+
     componentDidMount() {
         (async (that) => {
             await this.ShowStyle(0)
@@ -172,6 +173,7 @@ class Resume extends Component {
             await this.ShowStyle(2)
         })(this)
     }
+
     ShowStyle(n) {
         return new Promise((resolve, reject) => {
             let interval = speed
@@ -197,6 +199,7 @@ class Resume extends Component {
             showStyle()
         })
     }
+
     ShowResume() {
         return new Promise((resolve, reject) => {
             let length = resume.length
@@ -218,6 +221,7 @@ class Resume extends Component {
             showResumeMd()
         })
     }
+    
     render() {
         return (
             <div className="Resume" >
