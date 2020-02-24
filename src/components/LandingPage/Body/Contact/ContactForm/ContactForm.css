@@ -1,3 +1,8 @@
+button {
+  width: 70px;
+}
+
+
 .scroll-top {
   position: fixed; /* Fixed/sticky position */
   bottom: 20px; /* Place the button at the bottom of the page */
@@ -11,10 +16,12 @@
   padding: 15px; /* Some padding */
   border-radius: 20px; /* Rounded corners */
   font-size: 18px; /* Increase font size */
+  width: 60px;
 }
 
 .scroll-top:hover {
     background-color: #555;
+    border-color: white;
 }
 
 .scroll-top-image {

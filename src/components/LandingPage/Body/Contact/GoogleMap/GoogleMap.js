@@ -6,14 +6,14 @@ import './GoogleMap.css';
 class GoogleMap extends Component {
     render() {
         const style = {
-            width: '80%',
-            height: '80%',
+            width: '85%',
+            height: '85%',
             position: 'absolute'
         }
 
         return (
             <div className="google-map">
-                <h2>Currenct Location:</h2>
+                <h3>Currenct Location:</h3>
                 <Map 
                     google={this.props.google} 
                     zoom={14} 
