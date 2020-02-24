@@ -44,6 +44,7 @@ export default () => <div className="projects px-5 py-5" id="projects">
                 <h4><strong>Currency-Converter</strong></h4>
                 <p>The currency-converter that is designed to convert one currency into another in order to check its corresponding value. </p>
                 <a className="btn btn-info mb-3" href="https://github.com/StevenLiao123/Currency-Converter" target="_blank" rel="noopener noreferrer">Github</a>
+                <a className="btn btn-info mb-3" href="https://www.google.com.au" target="_blank" rel="noopener noreferrer">Demo</a>
             </div>
         </div>
     </div>
