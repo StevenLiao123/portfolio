@@ -7,6 +7,7 @@
 }
 
 .card-body {
+    height: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,6 +16,10 @@
 
 a {
     width: 100px;
+}
+
+img {
+    height: 50%;
 }
 
 .project-content p {
@@ -26,6 +31,8 @@ a {
     margin-bottom: 30px;
     transition: transform 0.5s;
     padding: 5px; 
+    height: 600px;
+    width: 450px;
 }
 
 .project-chartjs:hover, .currency-converter:hover, .homepage:hover, .burger:hover, .project-content-management-system:hover, .project-weather-widget:hover {
