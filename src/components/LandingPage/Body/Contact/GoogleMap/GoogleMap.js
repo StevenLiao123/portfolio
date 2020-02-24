@@ -8,11 +8,11 @@ class GoogleMap extends Component {
         const style = {
             width: '80%',
             height: '80%',
-            position: 'relative'
+            position: 'absolute'
         }
 
         return (
-            <div className="googlemap">
+            <div className="google-map">
                 <h2>Currenct Location:</h2>
                 <Map 
                     google={this.props.google} 

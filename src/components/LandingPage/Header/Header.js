@@ -22,9 +22,6 @@ class Header extends Component {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav ml-auto pb-3">
                         <li className="nav-item pb-3">
-                            <Link className="nav-link text-primary" to="resume">RESUME</Link>
-                        </li>
-                        <li className="nav-item pb-3">
                             <LinkTo className="nav-link text-primary" to="projects" spy={true} smooth={true} duration={500}>
                                 PROJECTS
                             </LinkTo>

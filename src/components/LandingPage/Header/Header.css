@@ -1,5 +1,5 @@
-a.nav-link:hover {
-    text-decoration: underline;
+.nav-link {
+    white-space: nowrap;
 }
 
 .nav-link:hover {

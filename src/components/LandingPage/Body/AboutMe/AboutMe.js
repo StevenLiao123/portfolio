@@ -5,14 +5,14 @@ import './AboutMe.css';
 export default () => <section className="section h-75 bg-primary" id="aboutme">
         <div className="skill-content section-content text-white">
             <h1>About Me</h1>
-            <p className="p1 text-justify px-3">" A junior front-end developer have the ability to design 
-                and develop high quality codes and then test these codes to make sure they work correctly. 
-                I bring along a Bachelor of Information Technology with a specialisation in Enterprise 
-                Software Development from the University of Technology Sydney. Moreover, I stay updated on 
-                all the latest trends and developments associated with this industry and I have the ability 
-                to adhere to all standards, rules and coding standards set forth by management. Indeed, 
-                I am able to deal with problems calmly and efficiently as well as possess a high aptitude 
-                for learning new skills and handling technical difficulties in an efficient and prompt manner 
-                underpinned by strong analytical skills and critical thinking. "</p>
+            <p className="p1 text-justify px-3">" A Front-End Developer with a flair for 
+                conceptualising then effectively and efficiently delivering elegant, 
+                user-friendly solutions. Has strong ability to quickly understand complex 
+                concepts, identify and solve problems backed by the aptitude to code for 
+                different browsers as well as design, develop and integrate Web applications. 
+                Well-versed in building a Web presence from the ground up: from concept, 
+                navigation, layout and programming to UI. Able to work under stress and 
+                understand how to handle objections under different situations. Promotes 
+                team work with peers to finish projects within deadlines. "</p>
         </div>
 </section>;

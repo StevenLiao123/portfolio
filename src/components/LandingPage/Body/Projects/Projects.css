@@ -6,43 +6,31 @@
     color: black;
 }
 
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    width: 30%;
+}
+
 .project-content p {
     font-weight: bold;
 }
 
-.project-chartjs {
+.project-chartjs, .project-content-management-system, .project-weather-widget, .currency-converter, .burger, .homepage {
     border-radius: 8px;
     margin-bottom: 30px;
     transition: transform 0.5s;
     padding: 5px; 
 }
 
-.project-chartjs:hover, .currency-converter:hover, .homepage:hover, .burger:hover {
+.project-chartjs:hover, .currency-converter:hover, .homepage:hover, .burger:hover, .project-content-management-system:hover, .project-weather-widget:hover {
     transform: translateY(-10px);
     background-color: grey;
-}
-
-.currency-converter {
-    border-radius: 8px;
-    margin-bottom: 30px;
-    transition: transform 0.5s;
-    padding: 5px; 
-}
-
-
-.homepage {
-    border-radius: 8px;
-    margin-bottom: 30px;
-    transition: transform 0.5s;
-    padding: 5px; 
-}
-
-
-.burger {
-    border-radius: 8px;
-    margin-bottom: 30px;
-    transition: transform 0.5s;
-    padding: 5px; 
 }
 
 h4 {
