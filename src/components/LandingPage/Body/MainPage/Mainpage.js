@@ -13,8 +13,8 @@ export default () => <div className="section">
     <div className="content text-center">
         <Typist>
             <h1>Steven Liao</h1> 
-            <h2>Front-End Developer</h2>
-            <p>HTML/CSS | JavaScript | BootStrap | ReactJS | NodeJS | MySQL ...</p>
+            <h2>Software Engineer</h2>
+            <p>HTML/CSS | JavaScript | TypeScript | ReactJS | NodeJS | GraphQL | MySQL | MongoDB | AWS...</p>
         </Typist>
     </div>
 </div>;
